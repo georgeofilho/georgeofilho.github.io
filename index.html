@@ -26,7 +26,7 @@
         content="Profissional de TI com expertise em Systems Administration, Network, Cloud, Zabbix, VMware, Fortigate.">
     <meta property="twitter:image" content="https://georgeofilho.github.io/www/img/foto.jpg">
 
-    <title>👨🏽‍💻 | CV George Filho | 👨🏽‍💻</title>
+    <title>👨🏽‍💻 | CV George Filho - Enhanced Preview | 👨🏽‍💻</title>
 
     <!-- Bootstrap core CSS -->
     <link href="www/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,25 +42,26 @@
     <!-- Custom CSS Page -->
     <link href="www/css/custom.css" rel="stylesheet" type="text/css">
 
+    <!-- Enhanced CSS -->
+    <link href="www/css/enhanced.css" rel="stylesheet" type="text/css">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="www/img/logo.png" />
-
-    <style type="text/css">
-        html,
-        body {
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-    </style>
 
 </head>
 
 <body id="page-top">
 
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">📄 Curriculo</span>
+            <span class="d-block d-lg-none">📄 Currículo</span>
             <span class="d-none d-lg-block">
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="www/img/foto.jpg"
                     alt="Foto de perfil de George Filho">
@@ -87,6 +88,12 @@
                     <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#idiomas">Idiomas</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#premioscertificacoes">Cursos & Certificações</a>
                 </li>
                 <li class="nav-item">
@@ -100,7 +107,7 @@
     <div class="container-fluid p-0">
 
         <!-- Sessão Sobre Mim -->
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="sobremim">
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center fade-in" id="sobremim">
             <div class="w-100">
 
                 <h1 class="mb-0">George
@@ -108,36 +115,25 @@
                 </h1>
 
                 <div class="subheading mb-5">
-                    Systems Administration | Zabbix | Network | Vmware | Fortigate | Cisco | Mikrotik | Cloud | Storage
-                    |
-                    Docker
+                    Systems Administration | Zabbix | Network | Vmware | Fortigate |
+                    Cisco | Mikrotik | Cloud | Storage | Docker
                 </div>
 
-                <p class="lead mb-5 sobre-mim">
+                <p class="lead mb-5 sobre-mim" data-translate="aboutText">
                     • Sempre tive paixão por tecnologia e por ajudar as pessoas e isso me ajudou a ter uma ampla visão
-                    de
-                    negócio,
-                    e assim pude unir know-how técnico com relacionamento com o cliente e contribuir para o
-                    desenvolvimento
-                    do
-                    negócio e produto.
+                    de negócio, e assim pude unir know-how técnico com relacionamento com o cliente e contribuir para o
+                    desenvolvimento do negócio e produto.
                     <br>
                     • Cinco anos de experiência nas áreas de TI, com atuação em ambientes on-premises nas funções de
-                    monitoramento
-                    e administração de sistemas e infraestrutura de rede e serviços, administração de servidores,
-                    virtualização,
-                    sistemas de Help Desk, sistemas de gerenciamento CCTV, instalação de novas tecnologias e suporte
-                    técnico
-                    a
-                    clientes (local e remoto).
+                    monitoramento e administração de sistemas e infraestrutura de rede e serviços, administração de
+                    servidores, virtualização, sistemas de Help Desk, sistemas de gerenciamento CCTV, instalação de
+                    novas tecnologias e suporte técnico a clientes (local e remoto).
                     <br>
                     • Experiencia com Sistemas Operacionais Linux e Windows, ferramentas de virtualização (VMware,
-                    Hyper-V,
-                    Proxmox), monitoramento (Zabbix, Nagios).
+                    Hyper-V, Proxmox), monitoramento (Zabbix, Nagios).
                     <br>
                     • Instalação, configuração e manutenção de equipamentos de rede, routers, switches, servidores e
-                    cabeamento
-                    estruturado.
+                    cabeamento estruturado.
                     <br>
                     • Conhecimentos em Windows Server, Linux, Docker, Fortigate, AWS, Azure, Zabbix, Network, Storage,
                     Virtualização.
@@ -175,19 +171,20 @@
         <hr class="m-0" />
 
         <!-- Sessão Formação -->
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="formacao">
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center fade-in" id="formacao">
 
             <div class="w-100">
-                <h2 class="mb-5">🎓 Formação Academica</h2>
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Faculdade Laboro</h3>
-                        <div class="subheading mb-3">Tecnólogo, Rede de Computadores -
-                            <span class="text-primary">Janeiro 2018 - Dezembro 2020</span>
-                        </div>
-                        <div>
-                            <strong>Um pouco sobre a minha graduação ...</strong><br>
-                            Formado em Redes de Computadores pela Faculdade Laboro, com habilidades em infraestrutura de
+                <h2 class="mb-5">🎓 Formação Acadêmica</h2>
+
+                <div class="education-card">
+                    <h3 class="mb-0">Faculdade Laboro</h3>
+                    <div class="subheading mb-3"><span data-translate="degree1">Tecnólogo, Rede de Computadores</span> -
+                        <span class="text-primary">Janeiro 2018 - Dezembro 2020</span>
+                    </div>
+                    <div>
+                        <strong data-translate="aboutDegree">Um pouco sobre a minha graduação ...</strong><br>
+                        <span data-translate="degree1Desc">Formado em Redes de Computadores pela Faculdade Laboro, com
+                            habilidades em infraestrutura de
                             redes, roteamento, switching e segurança cibernética. Capacitado para projetar, implementar
                             e
                             gerenciar redes corporativas, utilizando tecnologias Cisco, Windows/Linux e cloud.
@@ -195,28 +192,32 @@
                             prática em laboratórios e conhecimento em virtualização, firewalls e resolução de problemas
                             de
                             conectividade. Preparado para atuar como administrador de redes, analista de suporte,
-                            administrador de sistemas.<p>
-                                Foco: Redes corporativas, desempenho e segurança.<br>
-                                Competências: TCP/IP, VLANs, VPN, Wi-Fi, Monitoramento
-                        </div>
+                            administrador de sistemas.</span>
+                        <p>
+                            <strong data-translate="focus">Foco:</strong> <span data-translate="focus1">Redes
+                                corporativas, desempenho e segurança.</span><br>
+                            <strong data-translate="skills">Competências:</strong> TCP/IP, VLANs, VPN, Wi-Fi,
+                            Monitoramento
                     </div>
                 </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Faculdade Laboro</h3>
-                        <div class="subheading mb-3">Técnico em Informática -
-                            <span class="text-primary">Fevereiro 2012 - Abril 2015</span>
-                        </div>
-                        <div>
-                            <strong>Um pouco sobre a minha graduação ...</strong><br>
-                            Formado como Técnico em Informática pela Faculdade Laboro, com conhecimentos em montagem e
+                <div class="education-card">
+                    <h3 class="mb-0">Faculdade Laboro</h3>
+                    <div class="subheading mb-3"><span data-translate="degree2">Técnico em Informática</span> -
+                        <span class="text-primary">Fevereiro 2012 - Abril 2015</span>
+                    </div>
+                    <div>
+                        <strong data-translate="aboutDegree">Um pouco sobre a minha graduação ...</strong><br>
+                        <span data-translate="degree2Desc">Formado como Técnico em Informática pela Faculdade Laboro,
+                            com conhecimentos em montagem e
                             manutenção de computadores, redes locais, suporte técnico e sistemas operacionais (Windows e
                             Linux). Capacitado para instalar e configurar hardwares e softwares, solucionar problemas em
-                            equipamentos e auxiliar na infraestrutura de TI de empresas<p>
-                                Foco: Manutenção de PCs, redes básicas, virtualização, atendimento ao usuário<br>
-                                Competências: Pacote Office, configuração de servidores locais, troubleshooting.
-                        </div>
+                            equipamentos e auxiliar na infraestrutura de TI de empresas</span>
+                        <p>
+                            <strong data-translate="focus">Foco:</strong> <span data-translate="focus2">Manutenção de
+                                PCs, redes básicas, virtualização, atendimento ao usuário</span><br>
+                            <strong data-translate="skills">Competências:</strong> Pacote Office, configuração de
+                            servidores locais, troubleshooting.
                     </div>
                 </div>
             </div>
@@ -224,101 +225,117 @@
 
         <hr class="m-0" />
 
-        <!-- Sessão Experiência -->
-        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experiencia">
+        <!-- Sessão Experiência com Timeline -->
+        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center fade-in" id="experiencia">
 
             <div class="w-100">
                 <h2 class="mb-5">👨🏽‍💻 Experiências</h2>
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">IT Consultant </h3>
-                        <div class="subheading mb-3">Decskill
-                            <br>
-                            <span class="text-primary">Abril 2025 - Atual</span>
-                        </div>
-                        <p>
-                            <strong>Competências - </strong> Integrante de uma equipe de ITSM com foco em monitoramento
-                            e
-                            atendimento ao cliente via service desk.
-                            <br />
-                            <strong>Ferramentas - </strong> SCOM (System Center Operations Manager), Dynatrace, Broadcom
-                            CA
-                            Service Desk Manager, Broadcom CA Configuration Automation.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Técnico de Sistemas</h3>
-                        <div class="subheading mb-3">Divultec
-                            <br>
-                            <span class="text-primary">Janeiro 2024 - Abril 2025</span>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <h3 class="mb-0">IT Consultant</h3>
+                            <div class="subheading mb-3">Decskill
+                                <br>
+                                <span class="text-primary">Abril 2025 - <span
+                                        data-translate="current">Atual</span></span>
+                            </div>
+                            <p>
+                                <strong data-translate="competencies">Competências - </strong> <span
+                                    data-translate="exp1Comp">Integrante de uma equipe de ITSM com foco em monitoramento
+                                    e
+                                    atendimento ao cliente via service desk.</span>
+                                <br />
+                                <strong data-translate="tools">Ferramentas - </strong> SCOM (System Center Operations
+                                Manager), Dynatrace, Broadcom CA
+                                Service Desk Manager, Broadcom CA Configuration Automation.
+                            </p>
                         </div>
-                        <p>
-                            <strong>Competências - </strong>Atendimento aos Clientes locais e remotos: Service Desk,
-                            Field
-                            Service
-                            <br>
-                            <strong>Ferramentas - </strong>ManageEngine ServiceDesk Plus, Suporte a Servidores Windows
-                            (AD,
-                            DHCP, DNS, GPOs, File Server, Print Server), Suporte a Servidores de Backup (Veeam Backup &
-                            Replication), Suporte a Servidores de Virtualização (VMware, Hyper-V), Suporte a Serviços
-                            Microsoft (Office365, SharePoint),ManageEngine OpManager Plus.
-                            <br>
-                        </p>
                     </div>
-                </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Analista de TI - infraestrutura e Data Center</h3>
-                        <div class="subheading mb-3">TCN (Terminal Corredor Norte)
-                            <br>
-                            <span class="text-primary">Julho 2022 - Setembro 2023</span>
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <h3 class="mb-0"><span data-translate="exp2Title">Técnico de Sistemas</span></h3>
+                            <div class="subheading mb-3">Divultec
+                                <br>
+                                <span class="text-primary">Janeiro 2024 - Abril 2025</span>
+                            </div>
+                            <p>
+                                <strong data-translate="competencies">Competências - </strong><span
+                                    data-translate="exp2Comp">Atendimento aos Clientes locais e remotos: Service Desk,
+                                    Field
+                                    Service</span>
+                                <br>
+                                <strong data-translate="tools">Ferramentas - </strong>ManageEngine ServiceDesk Plus,
+                                Suporte a Servidores Windows (AD,
+                                DHCP, DNS, GPOs, File Server, Print Server), Suporte a Servidores de Backup (Veeam
+                                Backup &
+                                Replication), Suporte a Servidores de Virtualização (VMware, Hyper-V), Suporte a
+                                Serviços
+                                Microsoft (Office365, SharePoint),ManageEngine OpManager Plus.
+                                <br>
+                            </p>
                         </div>
-                        <p>
-                            <strong>Competências - </strong>Administração da infraestrutura e serviços de Data Center,
-                            atendimento aos clientes locais e remotos: Service Desk, Field Service, Infraestrutura de
-                            Redes,
-                            Administração de sistemas e integração com a
-                            Infraestrutura de TI, Administração do controlo de ativos de TI da empresa, gerenciamento do
-                            controlo de acesso de pessoas e viaturas, acompanhamento das politicas corporativas e de
-                            segurança da informação, Acompanhamento dos Serviços
-                            <br>
-                            <strong>Ferramentas - </strong>Redes: WAN, LAN, WLAN, VLAN, VPN, Firewall, CCTV, Servidores
-                            Linux: Web Server, Apache, Windows: (AD, DHCP, DNS, GPOs, File Server, Print Server,
-                            Hyper-V),
-                            Microsoft: Office 365, SharePoint, Sistemas Help Desk: GLPI, JIRA, Zabbix.
-                            <br>
-                        </p>
                     </div>
-                </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Analista de Telecomunicações</h3>
-                        <div class="subheading mb-3">Grupo Equatorial Energia
-                            <br>
-                            <span class="text-primary">Setembro 2020 - Junho 2022</span>
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <h3 class="mb-0"><span data-translate="exp3Title">Analista de TI - infraestrutura e Data
+                                    Center</span></h3>
+                            <div class="subheading mb-3">TCN (Terminal Corredor Norte)
+                                <br>
+                                <span class="text-primary">Julho 2022 - Setembro 2023</span>
+                            </div>
+                            <p>
+                                <strong data-translate="competencies">Competências - </strong><span
+                                    data-translate="exp3Comp">Administração da infraestrutura e serviços de Data Center,
+                                    atendimento aos clientes locais e remotos: Service Desk, Field Service,
+                                    Infraestrutura de Redes,
+                                    Administração de sistemas e integração com a
+                                    Infraestrutura de TI, Administração do controlo de ativos de TI da empresa,
+                                    gerenciamento do
+                                    controlo de acesso de pessoas e viaturas, acompanhamento das politicas corporativas
+                                    e de
+                                    segurança da informação, Acompanhamento dos Serviços</span>
+                                <br>
+                                <strong data-translate="tools">Ferramentas - </strong>Redes: WAN, LAN, WLAN, VLAN, VPN,
+                                Firewall, CCTV, Servidores
+                                Linux: Web Server, Apache, Windows: (AD, DHCP, DNS, GPOs, File Server, Print Server,
+                                Hyper-V),
+                                Microsoft: Office 365, SharePoint, Sistemas Help Desk: GLPI, JIRA, Zabbix.
+                                <br>
+                            </p>
                         </div>
-                        <p>
-                            <strong>Competências - </strong>Atendimento ao cliente, Trabalho em equipe, Central de
-                            operações
-                            de rede (NOC), Monitoramento proativo, Configuração de rede, Administração de central de
-                            chamadas, Suporte ao cliente, monitoramento das agências da Equatorial Energia, assim com as
-                            suas subestações nos estados brasileiros do Maranhão, Piauí, Alagoas, Pará, Amapá e Rio
-                            Grande
-                            do Sul, Configurações de equipamentos nível N1.
-                            <br>
-                            <strong>Ferramentas - </strong>Monitoramento: Nagios / Zabbix (Servidores, Switches,
-                            Firewall,
-                            EDDs, GPONs, Enlaces de Rádios), Monitoramento dos links de todas as subestações e
-                            escritórios
-                            da empresa e clientes (empresarial, livre e individual), Atendimento às requisições e
-                            incidentes
-                            via ServiceNow.
-                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <h3 class="mb-0"><span data-translate="exp4Title">Analista de Telecomunicações</span></h3>
+                            <div class="subheading mb-3">Grupo Equatorial Energia
+                                <br>
+                                <span class="text-primary">Setembro 2020 - Junho 2022</span>
+                            </div>
+                            <p>
+                                <strong data-translate="competencies">Competências - </strong><span
+                                    data-translate="exp4Comp">Atendimento ao cliente, Trabalho em equipe, Central de
+                                    operações
+                                    de rede (NOC), Monitoramento proativo, Configuração de rede, Administração de
+                                    central de
+                                    chamadas, Suporte ao cliente, monitoramento das agências da Equatorial Energia,
+                                    assim com as
+                                    suas subestações nos estados brasileiros do Maranhão, Piauí, Alagoas, Pará, Amapá e
+                                    Rio Grande
+                                    do Sul, Configurações de equipamentos nível N1.</span>
+                                <br>
+                                <strong data-translate="tools">Ferramentas - </strong>Monitoramento: Nagios / Zabbix
+                                (Servidores, Switches, Firewall,
+                                EDDs, GPONs, Enlaces de Rádios), Monitoramento dos links de todas as subestações e
+                                escritórios
+                                da empresa e clientes (empresarial, livre e individual), Atendimento às requisições e
+                                incidentes
+                                via ServiceNow.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -326,12 +343,100 @@
 
         <hr class="m-0" />
 
-        <!-- Skills -->
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+        <!-- Sessão Skills com Progress Bars -->
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center fade-in" id="skills">
             <div class="w-100">
                 <h2 class="mb-5">📎 Skills</h2>
 
                 <div class="subheading mb-3">Tecnologias</div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Linux Server</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Windows Server</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Virtualização (VMware/Hyper-V)</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Zabbix / Nagios</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Networking</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Cloud (AWS/Azure)</span>
+                                <span>55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 55%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Docker</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 45%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Backup (Veeam)</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subheading mb-3 mt-5">Tecnologia</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item">
                         <i class="fab fa-linux" data-toggle="tooltip" data-placement="top" title="Server Linux"></i>
@@ -371,11 +476,73 @@
             </div>
         </section>
 
+        <hr class="m-0" />
+
+        <!-- Sessão Projetos -->
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center fade-in" id="projetos">
+            <div class="w-100">
+                <h2 class="mb-5">🚀 Projetos</h2>
+
+                <div class="project-card">
+                    <h4><i class="fas fa-server"></i> <span data-translate="project2Title">Infraestrutura de
+                            Monitoramento</span></h4>
+                    <p data-translate="project2Desc">Implementação de ambiente completo de monitoramento com Zabbix
+                        para mais de 200 dispositivos, incluindo servidores, switches e firewalls.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Zabbix</span>
+                        <span class="project-tag">Linux</span>
+                        <span class="project-tag">MySQL</span>
+                        <span class="project-tag">SNMP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0" />
+
+        <!-- Sessão Idiomas -->
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center fade-in" id="idiomas">
+            <div class="w-100">
+                <h2 class="mb-5">🌍 Idiomas</h2>
+
+                <div class="languages-grid">
+                    <div class="language-card">
+                        <div class="flag">PT</div>
+                        <h4><span data-translate="portuguese">Português</span></h4>
+                        <p class="mb-2"><strong data-translate="native">Nativo</strong></p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div class="language-card">
+                        <div class="flag">EN</div>
+                        <h4><span data-translate="english">Inglês</span></h4>
+                        <p class="mb-2"><strong data-translate="basic">Básico</strong></p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 10%"></div>
+                        </div>
+                    </div>
+
+                    <div class="language-card">
+                        <div class="flag">ES</div>
+                        <h4><span data-translate="spanish">Espanhol</span></h4>
+                        <p class="mb-2"><strong data-translate="basic">Básico</strong></p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 10%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0" />
+
         <!-- Sessão Prêmios e Certificações -->
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="premioscertificacoes">
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center fade-in" id="premioscertificacoes">
             <div class="w-100">
                 <h2 class="mb-5">📜 Cursos & Certificações</h2>
-                <span class="text-primary">Curso</span>
+                <span class="text-primary"><span data-translate="courses">Cursos</span></span>
                 <p>
                 <ul class="fa-ul mb-0">
                     <li>
@@ -413,12 +580,12 @@
                 </ul>
                 </p>
 
-                <span class="text-primary">Certificações</span>
+                <span class="text-primary"><span data-translate="certifications">Certificações</span></span>
                 <p>
                 <ul class="fa-ul mb-0">
                     <li>
                         <i class="fa-li fa fa-certificate text-warning"></i>
-                        Em Andamento
+                        <span data-translate="inProgress">Em Andamento</span>
                     </li>
                 </ul>
                 </p>
@@ -428,12 +595,12 @@
         <hr class="m-0" />
 
         <!-- Sessão Recomendações -->
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="recomendacoes">
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center fade-in" id="recomendacoes">
             <div class="w-100">
                 <h2 class="mb-5">Recomendações</h2>
                 <div>
                     <img class="img-fluid img-profile rounded-circle mx-auto mb-2" style="width: 70px;"
-                        src="www/img/Jonathas.jpg" alt="Foto Jonathas L B Moraes">
+                        src="www/img/Jonathas.jpg" alt="Foto de Jonathas L B Moraes">
                     <a href="https://www.linkedin.com/in/jonathas-l-b-moraes-7915b6170/" target="_blank">
                         <p><strong>Jonathas L B Moraes</strong> <br /><small>Analista de Infraestrutura na Alerta
                                 Alarmes</small></p>
@@ -448,7 +615,7 @@
 
                 <div>
                     <img class="img-fluid img-profile rounded-circle mx-auto mb-2" style="width: 70px;"
-                        src="www/img/Adriano.jpg" alt="Foto Adriano Castro Carvalho">
+                        src="www/img/Adriano.jpg" alt="Foto de Adriano Castro Carvalho">
                     <a href="https://www.linkedin.com/in/adrianocastroc1/" target="_blank">
                         <p><strong>Adriano Castro Carvalho</strong> <br /><small>AZ-900 | NSE 3 | SOC | Analista de
                                 Segurança
@@ -465,7 +632,7 @@
 
                 <div>
                     <img class="img-fluid img-profile rounded-circle mx-auto mb-2" style="width: 70px;"
-                        src="www/img/AnaMaria.jpg" alt="Foto Ana Rodrigues">
+                        src="www/img/AnaMaria.jpg" alt="Foto de Ana Rodrigues">
                     <a href="https://www.linkedin.com/in/anamariarodrigues/" target="_blank">
                         <p><strong>Ana Rodrigues</strong> <br /><small>ServiceNow Squad Leader · Gerente de Projetos
                                 ServiceNow · PO · ITSM · Governança de TI · ITIL · Scrum SFC · Transformação Digital ·
@@ -482,28 +649,25 @@
             </div>
         </section>
 
-        <hr class="m-0" />
+    </div>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="www/vendor/jquery/jquery.min.js"></script>
-        <script src="www/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="www/vendor/jquery/jquery.min.js"></script>
+    <script src="www/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <script src="www/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="www/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Custom scripts for this template -->
-        <script src="www/js/resume.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="www/js/resume.min.js"></script>
 
-        <script>
-            $(document).ready(function () {
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
+    <!-- Enhanced JavaScript -->
+    <script src="www/js/enhanced.js"></script>
 
-        <!-- Cloudflare Web Analytics -->
-        <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-            data-cf-beacon='{"token": "9aea050ff1d84b41b0148f9e924fb0bc"}'></script>
-        <!-- End Cloudflare Web Analytics -->
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "9aea050ff1d84b41b0148f9e924fb0bc"}'></script>
+    <!-- End Cloudflare Web Analytics -->
 </body>
 
 </html>
